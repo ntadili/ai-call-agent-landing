@@ -1,0 +1,56 @@
+@media (min-height: 100px) and (max-height: 812px) {
+  html{
+      font-size: 90%;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1374px) {
+  html{
+      font-size: 90%;
+  }
+}
+
+@media (min-width: 670px) and (max-width: 1200px) {
+  html{
+      font-size: 80%;
+  }
+}
+
+@media (min-width: 515px) and (max-width: 670px) {
+  html{
+      font-size: 60%;
+  }
+}
+
+
+/* iPAD PRO SCREEN */
+@media (min-height: 1366px) and (max-height: 1550px ) and (min-width: 912px) and (max-width: 1350px){
+  html{
+      font-size: 90%;
+  }
+  .titles{
+    width: 80%;
+  }
+}
+
+/* MOBILE MEDIA QUERIES */
+@media (min-width: 616px) and (max-width: 800px) {
+  html{
+      font-size: 60%;
+  }
+  .titles{
+    width: 90%;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 615px) {
+  html{
+      font-size: 55%;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 360px) {
+  html{
+      font-size: 45%;
+  }
+}
