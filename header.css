@@ -1,0 +1,69 @@
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  padding: 0 5%;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 8px;
+}
+
+.titles{
+  background-color: none;
+}
+
+.meet-Lumi-sentence{
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  font-size: 3.75rem;
+  font-weight: 600;
+}
+
+header p{
+  font-size: 1.4rem;
+  font-weight: 300;
+  font-style: normal;
+  margin-bottom: 1.3rem;
+}
+
+/* Header buttons */
+.cta-btns{
+  display: flex;
+  gap: 10px;
+}
+
+.cta-btns a{
+  background-color: #00A9FF;
+  height: 3.2rem;
+  width: 10rem;
+  line-height: 3.2rem;
+  border-radius: 7px;
+  font-size: 1.3rem;
+}
+
+.cta-btns a{
+  text-decoration: none;
+  color: white;
+}
+
+.video-container {
+  aspect-ratio: 1011 / 449;  /* Use the exact aspect ratio of 1011:449 ≈ 2.25 */
+  max-width: 1011px;  /* The container won’t exceed 1011px */
+  margin: 0 auto;     /* Center the container horizontally */
+  width: 100%;
+  padding-bottom: calc(4 / 1011 * 100%); 
+  margin-top: 2rem;
+  margin-bottom: 48px;
+  border-radius: 10px;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
