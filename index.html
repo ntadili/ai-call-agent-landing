@@ -5,7 +5,83 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./nav-bar.css">
+  <link rel="stylesheet" href="./media-query.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   <style>
+
+    header{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+      padding: 0 5%;
+      text-align: center;
+      margin-top: 2%;
+      margin-bottom: 8px;
+    }
+
+    .titles{
+      background-color: none;
+    }
+
+    .meet-Lumi-sentence{
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      font-size: 3.75rem;
+      font-weight: 600;
+    }
+
+    header p{
+      font-size: 1.4rem;
+      font-weight: 300;
+      font-style: normal;
+      margin-bottom: 1.3rem;
+    }
+
+    /* Header buttons */
+    .cta-btns{
+      display: flex;
+      gap: 10px;
+    }
+
+    .cta-btns a{
+      background-color: #00A9FF;
+      height: 3.2rem;
+      width: 10rem;
+      line-height: 3.2rem;
+      border-radius: 7px;
+      font-size: 1.3rem;
+    }
+
+    .cta-btns a{
+      text-decoration: none;
+      color: white;
+    }
+
+    .video-container {
+      aspect-ratio: 1011 / 449;  /* Use the exact aspect ratio of 1011:449 ≈ 2.25 */
+      max-width: 1011px;  /* The container won’t exceed 1011px */
+      margin: 0 auto;     /* Center the container horizontally */
+      width: 100%;
+      padding-bottom: calc(4 / 1011 * 100%); 
+      margin-top: 2rem;
+      border-radius: 10px;
+    }
+
+    .video-container iframe {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+
+    
   </style>
 </head>
 <body>
@@ -37,11 +113,37 @@
     </div>
   </nav>
 
-  <script>
-    function toggleMenu() {
-      const navLinks = document.getElementById('navLinks');
-      navLinks.classList.toggle('open');
-    }
-  </script>
+  <header>
+    <div class="titles">
+      <p class="meet-Lumi-sentence">Meet Lumi.</p>
+      <h1>The AI Call Agent <br> that handles your business calls 24/7</h1>
+      <p>Never miss a customer call again. Lumi answers, remembers and books reservations like a human.</p>
+    </div>
+
+
+    <div class="cta-btns">
+      <a href=""><div class="try-btn">Try Lumi</div></a>
+      <a href=""><div class="header-btn">Book a call</div></a>
+    </div>
+
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/4SNThp0YiU4?si=u03tmA0OPRWkEE4r" 
+      frameborder="0" 
+      allowfullscreen>
+      </iframe>
+    </div>
+
+  </header>
+
 </body>
+
+<script>
+  function toggleMenu() {
+    const navLinks = document.getElementById('navLinks');
+    navLinks.classList.toggle('open');
+  }
+</script>
 </html>
+
+
+
