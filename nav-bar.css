@@ -3,10 +3,10 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      font-family: "Figtree", sans-serif;
     }
 
     body {
-      font-family: Arial, sans-serif;
       background-color: #F0F9FF;
     }
 
@@ -40,13 +40,15 @@
       display: flex;
       align-items: center;
       gap: 1rem;
+      margin-left: 110px;
     }
 
     .nav-links a {
       text-decoration: none;
       color: #333;
-      font-weight: 500;
+      font-weight: 450;
       transition: color 0.3s ease;
+      font-size: 1.2rem;
     }
 
     .nav-links a:hover {
@@ -62,9 +64,10 @@
       background-color: #00A9FF;
       color: #ffffff;
       text-align: center;
-      padding:  0.65rem 1rem;
       border-radius: 4px;
-      font-weight: 600;
+      font-weight: 500;
+      font-size: 1.3rem;
+      line-height: 40px;
       transition: background-color 0.3s ease;
     }
 
@@ -77,6 +80,9 @@
       display: none;
       flex-direction: column;
       cursor: pointer;
+
+      position: absolute;
+      right: 25px;
     }
 
     .menu-toggle span {
@@ -89,6 +95,7 @@
 
     /* Responsive styles */
     @media (max-width: 768px) {
+
       .nav-links {
         position: absolute;
         top: 60px; /* Position below the navbar */
@@ -118,6 +125,7 @@
       }
 
       .book-btn {
+        display: none;
         margin: 1rem 0;
         text-align: center;
       }
