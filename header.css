@@ -51,6 +51,11 @@ header p{
   color: white;
 }
 
+.try-btn{
+  background-color: #0000ff;
+  border-radius: 7px;
+}
+
 .video-container {
   aspect-ratio: 1011 / 449;  /* Use the exact aspect ratio of 1011:449 ≈ 2.25 */
   max-width: 1011px;  /* The container won’t exceed 1011px */
