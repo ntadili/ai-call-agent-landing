@@ -57,9 +57,9 @@ header p{
 }
 
 .video-container {
-  aspect-ratio: 1011 / 449;  /* Use the exact aspect ratio of 1011:449 ≈ 2.25 */
-  max-width: 1011px;  /* The container won’t exceed 1011px */
-  margin: 0 auto;     /* Center the container horizontally */
+  aspect-ratio: 1011 / 449;  /* Exact aspect ratio of 1011:449 ≈ 2.25 */
+  max-width: 1011px;  
+  margin: 0 auto;
   width: 100%;
   padding-bottom: calc(4 / 1011 * 100%); 
   margin-top: 2rem;
@@ -72,3 +72,60 @@ header p{
   height: 100%;
   display: block;
 }
+
+
+/* Slide-Up First Animation */
+@keyframes slideUp {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-up {
+  opacity: 0;                      /* hidden initially */
+  animation: slideUp 0.7s ease forwards;
+  /* The "forwards" keyword keeps the element at its final state */
+}
+
+
+/* Slide-Up Delayed Animation */
+@keyframes slideUp2 {
+  0% {
+    transform: translateY(250px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-up2 {
+  opacity: 0;                      
+  animation: slideUp 1s ease forwards;
+}
+
+
+/* Slide-Up More Delayed Animation */
+@keyframes slideUp3 {
+  0% {
+    transform: translateY(250px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-up3 {
+  opacity: 0;                      /* hidden initially */
+  animation: slideUp 1.3s ease forwards;
+  /* The "forwards" keyword keeps the element at its final state */
+}
+
