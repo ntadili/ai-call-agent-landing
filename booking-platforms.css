@@ -14,7 +14,6 @@ body {
 .platforms-section {
   width: 100%;
   padding: 2rem 1rem 0 1rem;
-  /* Adjust padding to match your design */
 }
 
 .platforms-container {
@@ -27,13 +26,13 @@ body {
 /* Divider Lines */
 .divider {
   border: none;
-  border-top: 1px solid #e1e1e1; /* adjust color to match Figma */
+  border-top: 1px solid #e1e1e1; 
   margin: 2rem 0;
 }
 
 /* Section Heading */
 .section-heading {
-  font-size: 1.8rem;      /* adjust to match Figma */
+  font-size: 1.8rem;  
   font-weight: bold;
   margin-bottom: 2rem;
 }
@@ -42,7 +41,7 @@ body {
 .logo-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;              /* space between logos */
+  gap: 2rem;          
   justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
@@ -50,7 +49,7 @@ body {
 
 /* Individual Logo Item */
 .logo-item {
-  width: 120px;           /* adjust to fit your design */
+  width: 120px;         
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,7 +64,7 @@ body {
 .additional-info {
   font-size: 1rem;
   margin-bottom: 2rem;
-  color: #555555;         /* optional: a slightly muted color */
+  color: #555555;       
 }
 
 /* ========== ANIMATION STYLES ========== */

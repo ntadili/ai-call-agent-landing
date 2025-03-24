@@ -13,7 +13,7 @@ body {
 /* ========== AI TECHNOLOGY SECTION ========== */
 .ai-tech-section {
   width: 100%;
-  padding: 2rem 1rem; /* Adjust padding to match your design */
+  padding: 2rem 1rem;
 }
 
 .ai-tech-container {
@@ -26,22 +26,22 @@ body {
 /* Divider Lines */
 .divider {
   border: none;
-  border-top: 1px solid #e1e1e1; /* Adjust to match your Figma design */
+  border-top: 1px solid #e1e1e1; 
   margin: 2rem 0;
 }
 
 /* "Powered by" Text */
 .powered-by {
-  font-size: 1.4rem;     /* Adjust size, color, weight per your design */
+  font-size: 1.4rem;     
   margin-bottom: 2rem;
-  color: #555555;      /* Example color */
+  color: #555555;
 }
 
 /* Logo Grid */
 .ai-logo-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;           /* Space between logos */
+  gap: 2rem;          
   justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
@@ -49,7 +49,7 @@ body {
 
 /* Individual Logo Items */
 .ai-logo-item {
-  width: 150px;        /* Adjust to your design’s desired logo size */
+  width: 150px;        
   display: flex;
   justify-content: center;
   align-items: center;
