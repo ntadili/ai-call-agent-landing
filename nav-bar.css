@@ -15,14 +15,13 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 1rem 2rem;
+      padding: 1rem 6.3rem;
     }
 
     /* Logo container */
     .logo {
       display: flex; /* Let’s make it a flex container */
       align-items: center; /* Vertically center the image */
-      background-color: #1976D2; /* Optional background color */
       border-radius: 4px; /* Optional, just to soften edges */
 
     }
@@ -30,7 +29,7 @@
     /* Make the image bigger but keep its aspect ratio */
     .logo img {
       display: block;
-      height: 40px;   /* Adjust as needed for your Figma design */
+      height: 4rem;   /* Adjust as needed for your Figma design */
       width: auto;    /* Auto width to maintain aspect ratio */
       object-fit: contain; /* Ensure the full logo is visible */
     }
@@ -40,7 +39,6 @@
       display: flex;
       align-items: center;
       gap: 1rem;
-      margin-left: 110px;
     }
 
     .nav-links a {
