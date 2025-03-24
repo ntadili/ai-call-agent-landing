@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #000000;
+  line-height: 1.5;
+}
+
+/* ========== AI TECHNOLOGY SECTION ========== */
+.ai-tech-section {
+  width: 100%;
+  padding: 2rem 1rem; /* Adjust padding to match your design */
+}
+
+.ai-tech-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+/* Divider Lines */
+.divider {
+  border: none;
+  border-top: 1px solid #e1e1e1; /* Adjust to match your Figma design */
+  margin: 2rem 0;
+}
+
+/* "Powered by" Text */
+.powered-by {
+  font-size: 1.4rem;     /* Adjust size, color, weight per your design */
+  margin-bottom: 2rem;
+  color: #555555;      /* Example color */
+}
+
+/* Logo Grid */
+.ai-logo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;           /* Space between logos */
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+/* Individual Logo Items */
+.ai-logo-item {
+  width: 150px;        /* Adjust to your design’s desired logo size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ai-logo-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+#make{
+  width: 170px;
+  margin-right: -35px;
+}
+
+#openai{
+  width: 150px;
+}
+
+#eleven-labs{
+  width: 160px;
+}
+
+#vapi{
+  width: 94px;
+  margin-left: 17px;
+}
+
+/* ========== ANIMATION STYLES ========== */
+/* Elements start slightly off-screen to the left */
+[data-animate="slide-in-left"] {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* When element is in view, apply the visible state */
+[data-animate="slide-in-left"].animate--visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ========== RESPONSIVE MEDIA QUERIES ========== */
+@media (max-width: 992px) {
+  .powered-by {
+    font-size: 1.4rem;
+  }
+  .ai-logo-item {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .powered-by {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  .ai-logo-grid{
+    width: 300px !important;
+    margin-left: 10%;
+  }
+  .ai-logo-item {
+    width: 80px;
+  }
+
+  #make{
+    width: 120px;
+    margin-right: -35px;
+  }
+  
+  #openai{
+    width: 100px;
+  }
+  
+  #eleven-labs{
+    width: 110px;
+  }
+  
+  #vapi{
+    width: 54px;
+    margin-left: 17px;
+  }
+}
+
+@media (max-width: 274px ) {
+    #make{
+      width: 130px;
+      margin-right: 0;
+      margin-bottom: -25px;
+    }
+    #vapi {
+      margin-left: 0;
+    }
+}

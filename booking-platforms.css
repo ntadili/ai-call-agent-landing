@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #000000;
+  line-height: 1.5;
+}
+
+/* ========== PLATFORMS SECTION ========== */
+.platforms-section {
+  width: 100%;
+  padding: 2rem 1rem 0 1rem;
+  /* Adjust padding to match your design */
+}
+
+.platforms-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+/* Divider Lines */
+.divider {
+  border: none;
+  border-top: 1px solid #e1e1e1; /* adjust color to match Figma */
+  margin: 2rem 0;
+}
+
+/* Section Heading */
+.section-heading {
+  font-size: 1.8rem;      /* adjust to match Figma */
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+/* Logo Grid */
+.logo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;              /* space between logos */
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+/* Individual Logo Item */
+.logo-item {
+  width: 120px;           /* adjust to fit your design */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Additional Info Text */
+.additional-info {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #555555;         /* optional: a slightly muted color */
+}
+
+/* ========== ANIMATION STYLES ========== */
+/* Elements start slightly off-screen to the left */
+[data-animate="slide-in-left"] {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* When the element is in-view, reveal it */
+[data-animate="slide-in-left"].animate--visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ========== RESPONSIVE MEDIA QUERIES ========== */
+@media (max-width: 992px) {
+  .section-heading {
+    font-size: 1.5rem;
+  }
+  .logo-item {
+    width: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-heading {
+    font-size: 1.3rem;
+  }
+  .logo-item {
+    width: 80px;
+  }
+}

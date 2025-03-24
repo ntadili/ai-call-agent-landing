@@ -8,8 +8,11 @@
   <link rel="stylesheet" href="./nav-bar.css">
   <link rel="stylesheet" href="./media-query.css">
   <link rel="stylesheet" href="./header.css">
+  <link rel="stylesheet" href="./technologies.css">
   <link rel="stylesheet" href="./section2.css">
   <link rel="stylesheet" href="./section2-mobile-grid.css">
+  <link rel="stylesheet" href="./booking-platforms.css">
+  <link rel="stylesheet" href="./faq.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -87,6 +90,7 @@
     .using-lumi .item-card{
       background-color: #BDFFB8;
     }
+
   </style>
 </head>
 <body>
@@ -141,16 +145,36 @@
 
   </header>
 
-  <section class="social-proof">
-    <div class="technologies-div">
-      <p>Powered by the most advanced AI technology</p>
-      <div class="logo-track">
-        <div class="make-div"><img id="make-img" src="./resources/makeCOM-removebg-preview.png" alt="Technologies used to build the AI"></div>
-        <div class="openai-div"><img src="./resources/OpenAI-black-wordmark.png" alt="Technologies used to build the AI"></div>
-        <div class="elevenlabs-div"><img src="./resources/elevenlabs-logo-black.png" alt="Technologies used to build the AI"></div>
-        <div class="vapi-div"><img id="vapi-img" src="./resources/vapi.png" alt="Technologies used to build the AI"></div>
+   <!-- AI Technology Section -->
+   <section class="ai-tech-section" id="ai-tech">
+    <div class="ai-tech-container">
+      <!-- Top Divider Line -->
+      <hr class="divider top-divider" />
+
+      <!-- Powered By Text -->
+      <p class="powered-by" data-animate="slide-in-left">
+        Powered by the most advanced AI technology
+      </p>
+
+      <!-- AI Logos Row -->
+      <div class="ai-logo-grid">
+        <!-- Replace src with your actual logos or inline SVGs -->
+        <div id="make" class="ai-logo-item" data-animate="slide-in-left">
+          <img src="./resources/makeCOM-removebg-preview.png" alt="Make">
+        </div>
+        <div id="openai" class="ai-logo-item" data-animate="slide-in-left">
+          <img src="./resources/OpenAI-black-wordmark.png" alt="OpenAI">
+        </div>
+        <div id="eleven-labs" class="ai-logo-item" data-animate="slide-in-left">
+          <img src="./resources/elevenlabs-logo-black.png" alt="ElevenLabs">
+        </div>
+        <div id="vapi" class="ai-logo-item" data-animate="slide-in-left">
+          <img src="./resources/vapi.png" alt="VAPI">
+        </div>
       </div>
 
+      <!-- Bottom Divider Line -->
+      <hr class="divider bottom-divider" />
     </div>
   </section>
 
@@ -206,31 +230,214 @@
 
   </section>
 
-  <section class="mt-[50px] text-center">
-    <div data-orientation="horizontal" role="none" class="shrink-0 bg-border w-[1107px] h-px mx-auto"></div>
-    <h2 class="font-['Figtree',Helvetica] font-bold text-black text-[35px] mt-[50px]">Works with the Platforms You Already Use</h2>
-    <div class="flex justify-center items-center mt-[49px]">
-      <img class="object-cover mx-4" alt="SevenRooms" src="/seven-rooms-name-1.png" style="width: 178px; height: 38px;">
-      <img class="object-cover mx-4" alt="Platform 2" src="/image-7.png" style="width: 156px; height: 98px;">
-      <img class="object-cover mx-4" alt="Platform 3" src="/image-8.png" style="width: 111px; height: 70px;">
-      <img class="object-cover mx-4" alt="Platform 4" src="/image-9.png" style="width: 125px; height: 30px;">
-      <div class="bg-[url(/image-10.png)] bg-cover bg-[50%_50%]" style="width: 132px; height: 30px;">
-        
-      </div>
-      <img class="object-cover mx-4" alt="Airtable" src="/airtable-logo-svg-1.png" style="width: 138px; height: 30px;"></div>
-      <p class="font-['Figtree',Helvetica] text-black text-xl text-center mt-[30px]"><span class="font-medium">…and +</span><span class="font-bold">20 more</span><span class="font-medium"> booking platforms</span></p>
-      <div data-orientation="horizontal" role="none" class="shrink-0 bg-border w-[1107px] h-px mx-auto mt-[50px]"></div>
-    </section>
+  <!-- Platforms Section -->
+  <section class="platforms-section" id="platforms">
+    <div class="platforms-container">
+      <!-- Top Divider Line -->
+      <hr class="divider top-divider" />
 
-    <iframe src="./faq.html" style="width: 100%; border: none; height: 100vh;"></iframe>
+      <!-- Section Heading -->
+      <h2 class="section-heading" data-animate="slide-in-left">
+        Works with the Platforms You Already Use
+      </h2>
+
+      <!-- Logos -->
+      <div class="logo-grid">
+        <!-- Replace src with your actual logo file paths or inline SVGs -->
+        <div class="logo-item" data-animate="slide-in-left">
+          <img src="./resources/seven rooms name.png" alt="SEVENROOMS">
+        </div>
+        <div class="logo-item" data-animate="slide-in-left">
+          <img src="./resources/opentable-official-removebg-preview.png" alt="OpenTable">
+        </div>
+        <div class="logo-item" data-animate="slide-in-left">
+          <img src="./resources/mb-logo-removebg-preview.png" alt="Mindbody">
+        </div>
+        <div class="logo-item" data-animate="slide-in-left">
+          <img src="./resources/Calendly_company_logo.png" alt="Calendly">
+        </div>
+        <div class="logo-item" data-animate="slide-in-left">
+          <img src="./resources/gohighlevelLogo.png" alt="HighLevel">
+        </div>
+        <div class="logo-item" data-animate="slide-in-left">
+          <img src="./resources/Airtable_Logo.svg.png" alt="Airtable">
+        </div>
+      </div>
+
+      <!-- Additional Info -->
+      <p class="additional-info" data-animate="slide-in-left">
+        ...and +20 more booking platforms
+      </p>
+
+      <!-- Bottom Divider Line -->
+      <hr class="divider bottom-divider" />
+    </div>
+  </section>
+
+  <div class="faq-section">
+    <div class="faq-container">
+      <h1>Frequently Asked Questions</h1>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h2>What is your return policy?</h2>
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>We offer a 30-day return policy for all unused items in their original packaging. Shipping costs for returns are the responsibility of the customer unless the item was received damaged or incorrect.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h2>How long does shipping take?</h2>
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Standard shipping typically takes 3-5 business days within the continental US. International shipping can take 7-14 business days depending on the destination country.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h2>Do you offer international shipping?</h2>
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, we ship to most countries worldwide. International shipping rates vary by location and package weight. Please check our shipping calculator at checkout for exact costs.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h2>What payment methods do you accept?</h2>
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>We accept all major credit cards (Visa, MasterCard, American Express), PayPal, and Apple Pay. All payments are processed securely through our encrypted payment system.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h2>How can I track my order?</h2>
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Once your order ships, you'll receive a tracking number via email. You can use this number to track your package on our website or directly through the carrier's tracking system.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 </body>
+
+
+
 
 <script>
   function toggleMenu() {
     const navLinks = document.getElementById('navLinks');
     navLinks.classList.toggle('open');
   }
+</script>
+
+<!-- Technologies list -->
+<script>
+      /**
+   * Using Intersection Observer to trigger
+   * the slide-in-left animation once per element
+   * when it enters the viewport.
+   */
+
+  // Select all elements that should slide in
+  const slideElements = document.querySelectorAll('[data-animate="slide-in-left"]');
+
+  // Intersection Observer options
+  const options = {
+    root: null,       // observes relative to viewport
+    rootMargin: '0px',
+    threshold: 0.1    // triggers when 10% of the element is visible
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        // Add a small delay for sequential animation
+        setTimeout(() => {
+          entry.target.classList.add('animate--visible');
+        }, index * 150); // 150ms delay between items
+        observer.unobserve(entry.target); // Stop observing once animated
+      }
+    });
+  }, options);
+
+  // Observe each element
+  slideElements.forEach(el => {
+    observer.observe(el);
+  });
+</script>
+
+<!-- Booking platforms JS -->
+<script>
+  /**
+* Using Intersection Observer to trigger
+* the slide-in-left animation once per element
+* when it enters the viewport.
+*/
+
+// Select all elements that should slide in
+const slideElements2 = document.querySelectorAll('[data-animate="slide-in-left"]');
+
+// Intersection Observer options
+const options2 = {
+root: null,       // observe relative to viewport
+rootMargin: '0px',
+threshold: 0.1    // trigger when 10% of the element is visible
+};
+
+const observer2 = new IntersectionObserver((entries, observer2) => {
+entries.forEach((entry, index) => {
+  if (entry.isIntersecting) {
+    // Add a small delay for sequential animation
+    setTimeout(() => {
+      entry.target.classList.add('animate--visible');
+    }, index * 150); // 150ms delay between each item
+    observer2.unobserve(entry.target); // Stop observing once animated
+  }
+});
+}, options2);
+
+// Observe each slide element
+slideElements2.forEach(el => {
+observer2.observe(el);
+});
+
+</script>
+
+<!-- FAQ JS -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      
+      question.addEventListener('click', () => {
+        // Close all other items
+        faqItems.forEach(otherItem => {
+          if (otherItem !== item && otherItem.classList.contains('active')) {
+            otherItem.classList.remove('active');
+          }
+        });
+
+        // Toggle current item
+        item.classList.toggle('active');
+      });
+    });
+  });
 </script>
 </html>
 
