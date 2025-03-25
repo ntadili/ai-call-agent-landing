@@ -9,8 +9,7 @@
   <link rel="stylesheet" href="./media-query.css">
   <link rel="stylesheet" href="./header.css">
   <link rel="stylesheet" href="./technologies.css">
-  <link rel="stylesheet" href="./section2.css">
-  <link rel="stylesheet" href="./section2-mobile-grid.css">
+  <link rel="stylesheet" href="./why-lumi.css">
   <link rel="stylesheet" href="./booking-platforms.css">
   <link rel="stylesheet" href="./faq.css">
   <link rel="stylesheet" href="./footer.css">
@@ -18,83 +17,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-  <style>  
-    .why-lumi{
-      height: auto;
-      padding: 60px 7rem 50px 7rem;
-    }
 
-    .why-lumi h4{
-      font-size: 2rem;
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    /* Outbound card */
-    .outbound-calls{
-      display: flex;
-      flex-direction: row-reverse;
-      height: 50%;
-      margin-bottom: 70px;
-    }
-
-    /* Inbound calls */
-    .inbound-calls{
-      height: 50%;
-      margin-bottom: 50px;
-    }
-
-    /* Cards */
-    .card{
-      display: flex;
-      gap: 20px;
-      background-color: rgb(255, 255, 255);
-      width: 50rem;
-      height: 35rem;
-      border-radius: 17px;
-
-      padding: 30px 35px;
-    }
-
-    .other-businesses, .using-lumi{
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-
-      text-align: center;
-      width: 50%;
-    }
-
-    .card-title{
-      font-size: 1.5rem;
-      font-weight: 700;
-    }
-
-    .item-card{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      background-color: rgb(255, 255, 255);
-      width: 100%;
-      height: 20%;
-      padding: 10px;
-      border-radius: 15px;
-
-      font-size: 1rem;
-      font-weight: 550;
-    }
-
-    .other-businesses .item-card{
-      background-color: #FFD4D4;
-    }
-    .using-lumi .item-card{
-      background-color: #BDFFB8;
-    }
-
-  </style>
 </head>
+
 <body>
+
+  
   <!-- Navigation Bar -->
   <nav class="navbar">
     <div class="nav-container">
@@ -124,10 +52,12 @@
     </div>
   </nav>
 
+
+  <!-- Header CTA section -->
   <header>
     <div class="titles">
       <p class="meet-Lumi-sentence slide-up">Meet Lumi.</p>
-      <h1 class="slide-up">The AI Call Agent <br> that handles your business calls 24/7</h1>
+      <h1 class="slide-up">PAGAR HMRC HOW ULTIMO DIAThe AI Call Agent <br> that handles your business calls 24/7</h1>
       <p class="slide-up">Never miss a customer call again. Lumi answers, remembers and books reservations like a human.</p>
     </div>
 
@@ -145,6 +75,7 @@
     </div>
 
   </header>
+
 
    <!-- AI Technology Section -->
    <section class="ai-tech-section" id="ai-tech">
@@ -178,21 +109,32 @@
     </div>
   </section>
 
+
   <!-- Why Lumi Section -->
   <section class="why-lumi">
     <h4>Why Lumi is essential for your business</h4>
+  
+    <!-- Outbound Calls Row -->
     <div class="outbound-calls">
-
+      <!-- Text, Button, Arrow -->
+      <div class="outbound-text">
+        <h2>Outbound calls</h2>
+        <p>Confirm bookings and reduce no-shows automatically</p>
+        <a href="#"><div class="book-btn">I’m in</div></a>
+        <!-- Arrow for Outbound -->
+        <img src="./resources/arrow1.png" alt="arrow" class="arrow arrow-outbound">
+      </div>
+  
+      <!-- Pink/Green Card -->
       <div class="card">
-
         <div class="other-businesses">
           <p class="card-title">Other businesses</p>
           <div class="item-card">No show appointments hurt revenue</div>
           <div class="item-card">Staff spends hours making confirmation calls</div>
           <div class="item-card">Hiring staff for follow-ups is costly</div>
-          <div class="item-card">slow responses lead to missed opportunities</div>
+          <div class="item-card">Slow responses lead to missed opportunities</div>
         </div>
-
+  
         <div class="using-lumi">
           <p class="card-title">Using Lumi</p>
           <div class="item-card">AI sends automated reminders</div>
@@ -200,36 +142,43 @@
           <div class="item-card">AI follows up at a fraction of the cost</div>
           <div class="item-card">AI calls back promptly</div>
         </div>
+      </div>
+    </div>
+  
+    <!-- Inbound Calls Row -->
+    <div class="inbound-calls">
 
+      <!-- Text, Button, Arrow -->
+      <div class="inbound-text">
+        <h2>Inbound calls</h2>
+        <p>Answer every call, book every customer</p>
+        <a href="#"><div class="book-btn">I’m in</div></a>
+        <!-- Arrow for Inbound -->
+        <img src="./resources/arrow2.png" alt="arrow" class="arrow arrow-inbound">
       </div>
 
-    </div>
-
-    <div class="inbound-calls">
-      
+      <!-- Pink/Green Card -->
       <div class="card">
-
         <div class="other-businesses">
           <p class="card-title">Other businesses</p>
           <div class="item-card">Missed calls during peak hours</div>
           <div class="item-card">Long wait times frustrate customers</div>
-          <div class="item-card">Staff overwhelmed with titive questions</div>
+          <div class="item-card">Staff overwhelmed with repetitive questions</div>
           <div class="item-card">Manual booking mistakes</div>
         </div>
-
+  
         <div class="using-lumi">
           <p class="card-title">Using Lumi</p>
           <div class="item-card">24/7 AI answering every call</div>
           <div class="item-card">Instant response, no waiting</div>
           <div class="item-card">AI handles FAQs automatically</div>
-          <div class="item-card">Seamless, error free auto booking</div>
+          <div class="item-card">Seamless, error-free auto booking</div>
         </div>
-
       </div>
 
     </div>
-
   </section>
+
 
   <!-- Platforms Section -->
   <section class="platforms-section" id="platforms">
@@ -273,6 +222,7 @@
       <hr class="divider bottom-divider" />
     </div>
   </section>
+
 
     <!-- FAQ Section -->
   <div class="faq-section">
@@ -335,6 +285,7 @@
     </div>
   </div>
 
+
     <!-- Footer Section -->
   <footer class="cta-footer">
     <!-- Top CTA Section -->
@@ -362,6 +313,7 @@
       </div>
     </div>
   </footer>
+
 
 </body>
 

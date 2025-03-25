@@ -1,0 +1,211 @@
+/****************************************
+  WHY LUMI SECTION
+****************************************/
+.why-lumi {
+  padding: 10px 7rem 50px 7rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.why-lumi h4 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+/****************************************
+  OUTBOUND & INBOUND CALLS
+****************************************/
+.outbound-calls,
+.inbound-calls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.outbound-calls {
+  flex-direction: row;
+}
+
+.inbound-calls {
+  flex-direction: row-reverse;
+  margin-bottom: 50px;
+}
+
+/****************************************
+  TEXT + ARROW CONTAINERS
+****************************************/
+
+.outbound-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  max-width: 300px;
+  position: relative;
+}
+
+.inbound-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 300px;
+  position: relative;
+}
+
+/****************************************
+  HEADINGS & PARAGRAPHS
+****************************************/
+.outbound-text h2,
+.inbound-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.outbound-text p,
+.inbound-text p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  color: #555;
+}
+
+/****************************************
+  BOOK BUTTON
+****************************************/
+.book-btn {
+  background-color: #00A9FF;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.book-btn:hover {
+  background-color: #3e59f2;
+}
+
+/****************************************
+  ARROWS
+****************************************/
+.arrow {
+  margin-top: 1rem;
+  width: 120px; 
+  height: auto;
+}
+
+/****************************************
+  CARDS (GREY & GREEN BOXES)
+****************************************/
+.card {
+  display: flex;
+  gap: 20px;
+  background-color: #fff;
+  border-radius: 17px;
+  padding: 30px 35px;
+  box-sizing: border-box;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  max-width: 700px;
+  width: 100%;
+}
+
+.other-businesses,
+.using-lumi {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+/****************************************
+  ITEM-CARD (EACH ROW)
+****************************************/
+.item-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: 550;
+  min-height: 50px;
+  padding: 10px;
+}
+
+
+.other-businesses .item-card {
+  background-color: #dddddd;
+}
+
+.using-lumi .item-card {
+  background-color: #bdffb8;
+}
+
+/****************************************
+  RESPONSIVE MEDIA QUERIES
+****************************************/
+@media (max-width: 992px) {
+  .why-lumi {
+    padding: 40px 2rem;
+  }
+  .outbound-calls,
+  .inbound-calls {
+    flex-direction: column; 
+    gap: 2rem;
+  }
+  .arrow {
+    display: none;
+  }
+  /* Center text & arrow on smaller screens */
+  .outbound-text,
+  .inbound-text {
+    align-items: center;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .outbound-text h2,
+  .inbound-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .outbound-text p,
+  .inbound-text p {
+    font-size: 0.95rem;
+  }
+  
+  .card {
+    max-width: 100%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .why-lumi {
+    padding: 30px 1rem;
+  }
+  .outbound-text h2,
+  .inbound-text h2 {
+    font-size: 1.4rem;
+  }
+  .card-title {
+    font-size: 1.2rem;
+  }
+  .item-card {
+    font-size: 0.9rem;
+  }
+}
