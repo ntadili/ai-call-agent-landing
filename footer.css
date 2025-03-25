@@ -63,6 +63,7 @@
 .footer-nav {
   display: flex;
   gap: 1.5rem;
+  margin-right: 3%;
 }
 
 .footer-nav a {
@@ -95,5 +96,8 @@
   .footer-bottom {
     flex-direction: column; 
     text-align: center;
+  }
+  .footer-nav {
+    margin-right: 0px;
   }
 }

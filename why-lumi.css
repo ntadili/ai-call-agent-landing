@@ -2,7 +2,7 @@
   WHY LUMI SECTION
 ****************************************/
 .why-lumi {
-  padding: 10px 7rem 50px 7rem;
+  padding: 10px 7rem 30px 7rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -10,7 +10,7 @@
 .why-lumi h4 {
   font-size: 2rem;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-weight: 600;
 }
 
@@ -160,12 +160,12 @@
 ****************************************/
 @media (max-width: 992px) {
   .why-lumi {
-    padding: 40px 2rem;
+    padding: 30px 2rem;
   }
   .outbound-calls,
   .inbound-calls {
     flex-direction: column; 
-    gap: 2rem;
+    gap: 1rem;
   }
   .arrow {
     display: none;
