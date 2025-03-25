@@ -47,6 +47,9 @@
   html{
       font-size: 55%;
   }
+  .titles{
+    width: 85%;
+  }
 }
 
 @media (min-width: 100px) and (max-width: 360px) {
