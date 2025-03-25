@@ -1,0 +1,99 @@
+/*CTA FOOTER BASE STYLES */
+.cta-footer {
+  background-color: #b1dbf6; 
+  color: #000000;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/*****************************
+  TOP CTA SECTION
+******************************/
+.cta-section {
+  padding: 2rem 1rem; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; 
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.cta-title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #4a46f7; 
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #635df5;
+}
+
+/*****************************
+  FOOTER BOTTOM SECTION
+******************************/
+.footer-bottom {
+  max-width: 1200px;  
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  flex-wrap: wrap;               
+  gap: 1rem;                   
+}
+
+/* Logo */
+.footer-logo img {
+  width: 140px;  
+  height: auto;
+}
+
+/* Navigation links */
+.footer-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #4a46f7;
+}
+
+/* Copyright */
+.footer-copy {
+  font-size: 0.9rem;
+  color: #bababa;
+}
+
+
+@media (max-width: 768px) {
+  .cta-title {
+    font-size: 1.7rem;
+  }
+  .cta-button {
+    font-size: 0.95rem;
+    padding: 0.7rem 1.4rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column; 
+    text-align: center;
+  }
+}
