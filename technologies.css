@@ -13,7 +13,7 @@ body {
 /* ========== AI TECHNOLOGY SECTION ========== */
 .ai-tech-section {
   width: 100%;
-  padding: 2rem 1rem;
+  padding: 0rem 1rem;
 }
 
 .ai-tech-container {
@@ -33,7 +33,7 @@ body {
 /* "Powered by" Text */
 .powered-by {
   font-size: 1.4rem;     
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   color: #555555;
 }
 
@@ -44,7 +44,6 @@ body {
   gap: 2rem;          
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
 }
 
 /* Individual Logo Items */
