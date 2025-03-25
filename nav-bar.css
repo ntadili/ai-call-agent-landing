@@ -1,130 +1,179 @@
-    /* Basic reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Figtree", sans-serif;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Figtree", sans-serif;
+}
 
-    body {
-      background-color: #F0F9FF;
-    }
+body {
+  background-color: #FAFAFA;/* F0F9FF */
+}
 
-    /* Nav container */
-    nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1rem 6.3rem;
-    }
+/* Navbar Styles */
+.navbar {
+  background-color: #FAFAFA;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
 
-    /* Logo container */
-    .logo {
-      display: flex; /* Let’s make it a flex container */
-      align-items: center; /* Vertically center the image */
-      border-radius: 4px; /* Optional, just to soften edges */
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
-    }
+/* Logo */
+.logo img {
+  height: 3.5rem;
+  width: auto;
+  object-fit: contain;
+}
 
-    /* Make the image bigger but keep its aspect ratio */
-    .logo img {
-      display: block;
-      height: 4rem;   /* Adjust as needed for your Figma design */
-      width: auto;    /* Auto width to maintain aspect ratio */
-      object-fit: contain; /* Ensure the full logo is visible */
-    }
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  transition: all 0.3s ease;
+}
 
-    /* Navigation links (desktop) */
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 550;
+  font-size: 1.1rem;
+  transition: color 0.3s;
 
-    .nav-links a {
-      text-decoration: none;
-      color: #333;
-      font-weight: 450;
-      transition: color 0.3s ease;
-      font-size: 1.2rem;
-    }
+  font-family: 'Poppins', sans-serif; /* Example modern font */
+  letter-spacing: 0.5px;
 
-    .nav-links a:hover {
-      color: #555;
-    }
+  /* Switch in between nav border or underline for nav links */
+  /* position: relative; 
+  color: #333;
+  transition: color 0.3s ease; */
+}
 
-    /* "Book" button */
-    .book-btn {
-      display: block;
-      width: 130px;
-      height: 41px;
-      text-decoration: none;
-      background-color: #00A9FF;
-      color: #ffffff;
-      text-align: center;
-      border-radius: 4px;
-      font-weight: 500;
-      font-size: 1.3rem;
-      line-height: 40px;
-      transition: background-color 0.3s ease;
-    }
+.nav-links a:hover {
+  color: #00A9FF;
+}
 
-    .book-btn:hover {
-      background-color: #1976D2;
-    }
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #00A9FF;
+  transition: width 0.3s ease;
+}
 
-    /* Hamburger icon for mobile */
-    .menu-toggle {
-      display: none;
-      flex-direction: column;
-      cursor: pointer;
+.nav-links a:hover::after {
+  width: 100%;
+}
 
-      position: absolute;
-      right: 25px;
-    }
+/* CTA Book Button */
+.book-btn {
+  background-color: #00a9ff;
+  color: #fff;
+  padding: 0.6rem 1.4rem;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.3s;
+}
 
-    .menu-toggle span {
-      width: 25px;
-      height: 3px;
-      background: #333;
-      margin: 4px 0;
-      transition: 0.4s;
-    }
+.book-btn:hover {
+  background-color: #1976d2;
+}
 
-    /* Responsive styles */
-    @media (max-width: 768px) {
+.desktop-only {
+  display: block;
+}
 
-      .nav-links {
-        position: absolute;
-        top: 60px; /* Position below the navbar */
-        right: 0;
-        background-color: #f0f8ff;
-        flex-direction: column;
-        width: 100%;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease-out;
-      }
+.mobile-visible {
+  display: none;
+}
 
-      /* Show the hamburger icon */
-      .menu-toggle {
-        display: flex;
-      }
+/* Hamburger Menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
 
-      /* When .open is added, expand the menu */
-      .nav-links.open {
-        max-height: 200px; /* Adjust if needed */
-      }
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
 
-      /* Space out mobile links */
-      .nav-links a {
-        padding: 1rem;
-        border-bottom: 1px solid #ccc;
-      }
+/* Hamburger Menu Open State */
+.menu-toggle.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
 
-      .book-btn {
-        display: none;
-        margin: 1rem 0;
-        text-align: center;
-      }
-    }
+.menu-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-container {
+    position: relative;
+  }
+
+  /* Mobile Navigation Links */
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 2rem;
+    transform: translateY(-20px);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  .nav-links.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /* Hide Desktop-only Book Button */
+  .desktop-only {
+    display: none;
+  }
+
+  /* Show Mobile-only Book Button */
+  .mobile-visible {
+    display: inline-block;
+    margin-top: 1rem;
+  }
+
+  /* Show Hamburger */
+  .menu-toggle {
+    display: flex;
+  }
+}
