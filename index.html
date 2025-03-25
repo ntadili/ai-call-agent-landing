@@ -95,6 +95,7 @@
   </style>
 </head>
 <body>
+  <!-- Navigation Bar -->
   <nav class="navbar">
     <div class="nav-container">
       <!-- Logo -->
@@ -177,6 +178,7 @@
     </div>
   </section>
 
+  <!-- Why Lumi Section -->
   <section class="why-lumi">
     <h4>Why Lumi is essential for your business</h4>
     <div class="outbound-calls">
@@ -272,58 +274,61 @@
     </div>
   </section>
 
-    <!-- Platforms Section -->
+    <!-- FAQ Section -->
   <div class="faq-section">
     <div class="faq-container">
       <h1>Frequently Asked Questions</h1>
       <div class="faq-list">
-        <div class="faq-item">
+        <div class="faq-item slide-in-right">
           <div class="faq-question">
-            <h2>What is your return policy?</h2>
+            <h2>How much does Lumi cost?</h2>
             <span class="icon">+</span>
           </div>
           <div class="faq-answer">
-            <p>We offer a 30-day return policy for all unused items in their original packaging. Shipping costs for returns are the responsibility of the customer unless the item was received damaged or incorrect.</p>
+            <p>Lumi costs a fraction of hiring a full-time employee.
+              There's a one-time setup fee based on your needs, and after that, you only pay per minute of usage.
+              Current pricing is $0.12 per minute.
+              Book a quick call with our team and we'll build a package that fits your business.</p>
           </div>
         </div>
 
-        <div class="faq-item">
+        <div class="faq-item slide-in-right">
           <div class="faq-question">
-            <h2>How long does shipping take?</h2>
+            <h2>Can Lumi have a custom personality or script?</h2>
             <span class="icon">+</span>
           </div>
           <div class="faq-answer">
-            <p>Standard shipping typically takes 3-5 business days within the continental US. International shipping can take 7-14 business days depending on the destination country.</p>
+            <p>Absolutely. Think of Lumi as a trainable employee. You can customize how she speaks, what she says, and how she responds to different situations. It's like hiring someone—only faster, more consistent, and always available.</p>
           </div>
         </div>
 
-        <div class="faq-item">
+        <div class="faq-item slide-in-right">
           <div class="faq-question">
-            <h2>Do you offer international shipping?</h2>
+            <h2>How long does it take to integrate Lumi into my business?</h2>
             <span class="icon">+</span>
           </div>
           <div class="faq-answer">
-            <p>Yes, we ship to most countries worldwide. International shipping rates vary by location and package weight. Please check our shipping calculator at checkout for exact costs.</p>
+            <p>It depends on your needs, but most businesses are up and running within a few days to a couple of weeks. We'll walk you through the whole process to make it smooth and fast.</p>
           </div>
         </div>
 
-        <div class="faq-item">
+        <div class="faq-item slide-in-right">
           <div class="faq-question">
-            <h2>What payment methods do you accept?</h2>
+            <h2>What happens if Lumi can't answer a customer's question?</h2>
             <span class="icon">+</span>
           </div>
           <div class="faq-answer">
-            <p>We accept all major credit cards (Visa, MasterCard, American Express), PayPal, and Apple Pay. All payments are processed securely through our encrypted payment system.</p>
+            <p>Lumi is trained to manage almost every situation. But in the rare case it can't, it will instantly transfer the call to your team, so your customer never hits a dead end. Simple as that.</p>
           </div>
         </div>
 
-        <div class="faq-item">
+        <div class="faq-item slide-in-right">
           <div class="faq-question">
-            <h2>How can I track my order?</h2>
+            <h2>What if Lumi doesn't work for my business?</h2>
             <span class="icon">+</span>
           </div>
           <div class="faq-answer">
-            <p>Once your order ships, you'll receive a tracking number via email. You can use this number to track your package on our website or directly through the carrier's tracking system.</p>
+            <p>We offer a 14-day guarantee. If you feel Lumi hasn't made a positive impact, you can cancel and request a full refund—no hassle 🙂</p>
           </div>
         </div>
       </div>
@@ -466,6 +471,32 @@ observer2.observe(el);
       });
     });
   });
+
+  // SLIDE LEFT ANIMATION ENTERING VIEWPORT
+  document.addEventListener("DOMContentLoaded", () => {
+    const faqItems = document.querySelectorAll(".faq-item.slide-in-right");
+
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.1
+    };
+
+    const faqObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate--visible");
+          observer.unobserve(entry.target); // animate once
+        }
+      });
+    }, observerOptions);
+
+    faqItems.forEach(item => {
+      faqObserver.observe(item);
+    });
+});
+
+
 </script>
 </html>
 

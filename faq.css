@@ -99,3 +99,20 @@ body {
     padding: 1rem;
   }
 }
+
+
+/* FAQ Section Styles (existing code remains unchanged) */
+/* ... existing FAQ styles ... */
+
+/* Slide-In-Right Animation for FAQ Items */
+.faq-item.slide-in-right {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: transform 0.7s ease, opacity 0.7s ease;
+}
+
+.faq-item.slide-in-right.animate--visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
