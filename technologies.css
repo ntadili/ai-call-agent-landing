@@ -21,18 +21,21 @@ body {
   margin: 0 auto;
   text-align: center;
   position: relative;
+  box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.04)
+
 }
 
 /* Divider Lines */
+
 .divider {
   border: none;
-  border-top: 1px solid #e1e1e1; 
+  border-top: 0 solid #e1e1e1 !important; 
   margin: 2rem 0;
 }
 
 /* "Powered by" Text */
 .powered-by {
-  font-size: 1.4rem;     
+  font-size: 1.2rem;     
   margin-bottom: 1rem;
   color: #555555;
 }
@@ -60,20 +63,20 @@ body {
 }
 
 #make{
-  width: 170px;
+  width: 140px;
   margin-right: -35px;
 }
 
 #openai{
-  width: 150px;
+  width: 120px;
 }
 
 #eleven-labs{
-  width: 160px;
+  width: 130px;
 }
 
 #vapi{
-  width: 94px;
+  width: 74px;
   margin-left: 17px;
 }
 
