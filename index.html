@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./section2-mobile-grid.css">
   <link rel="stylesheet" href="./booking-platforms.css">
   <link rel="stylesheet" href="./faq.css">
+  <link rel="stylesheet" href="./footer.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -94,31 +95,31 @@
   </style>
 </head>
 <body>
-  <nav>
-    <!-- Logo area -->
-    <div class="logo">
-      <a href="index.html">
-        <img src="./resources/LumiFinalLogo.png" alt="Logo" />
+  <nav class="navbar">
+    <div class="nav-container">
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <img src="./resources/LumiFinalLogo.png" alt="Lumi Logo" />
       </a>
-    </div>
-
-    <!-- Hamburger menu icon (visible on mobile) -->
-    <div class="menu-toggle" onclick="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-
-    <!-- Navigation links -->
-    <div class="nav-links" id="navLinks">
-      <a href="#home">Home</a>
-      <a href="#why-lumi">Why Lumi?</a>
-      <a href="#faq">FAQ</a>
-    </div>
-
-    <!-- Book button -->
-    <div class="bookbtn-div">
-      <a href="#book" class="book-btn">Book</a>
+  
+      <!-- Navigation Links (Mobile and Desktop) -->
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#why-lumi">Why Lumi?</a>
+        <a href="#faq">FAQ</a>
+        <!-- Mobile-only Book button inside nav -->
+        <a href="#book" class="book-btn mobile-visible">Book</a>
+      </div>
+  
+      <!-- Book Button (Desktop Only) -->
+      <a href="#book" class="book-btn desktop-only">Book</a>
+  
+      <!-- Hamburger Menu Button -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </nav>
 
@@ -272,6 +273,7 @@
     </div>
   </section>
 
+    <!-- Platforms Section -->
   <div class="faq-section">
     <div class="faq-container">
       <h1>Frequently Asked Questions</h1>
@@ -329,17 +331,46 @@
     </div>
   </div>
 
+    <!-- Footer Section -->
+  <footer class="cta-footer">
+    <!-- Top CTA Section -->
+    <div class="cta-section">
+      <h2 class="cta-title">Integrate Lumi!</h2>
+      <a href="#contact" class="cta-button">Book a Call</a>
+    </div>
+  
+    <!-- Footer Bottom Section -->
+    <div class="footer-bottom">
+      <div class="footer-logo">
+        <!-- Replace with your actual logo path -->
+        <img src="./resources/LumiFinalLogo.png" alt="Company Logo">
+      </div>
+  
+      <nav class="footer-nav">
+        <!-- Only three links for your three sections -->
+        <a href="#section1">Home</a>
+        <a href="#section2">Why Lumi</a>
+        <a href="#section3">FAQ</a>
+      </nav>
+  
+      <div class="footer-copy">
+        &copy; 2025 Lumicalls. <br> All rights reserved.
+      </div>
+    </div>
+  </footer>
 
 </body>
 
 
 
-
+<!-- Nav Bar Hamburguer -->
 <script>
   function toggleMenu() {
-    const navLinks = document.getElementById('navLinks');
-    navLinks.classList.toggle('open');
-  }
+  const navLinks = document.getElementById("navLinks");
+  const menuToggle = document.getElementById("menuToggle");
+  navLinks.classList.toggle("open");
+  menuToggle.classList.toggle("open");
+}
 </script>
 
 <!-- Technologies list -->
