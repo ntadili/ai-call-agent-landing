@@ -57,6 +57,15 @@
   .faq-section{
     margin-top: 30px !important;
   }
+
+  .efficient-arrow p{
+    top: 27px !important;
+    left: 13px !important;
+  }
+  .efficient-arrow div {
+    width: 15px !important;
+    height: 15px !important;
+  }
 }
 
 @media (min-width: 100px) and (max-width: 360px) {
