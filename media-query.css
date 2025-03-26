@@ -53,6 +53,10 @@
   .video-container{
     margin-bottom: 28px !important;
   }
+
+  .faq-section{
+    margin-top: 30px !important;
+  }
 }
 
 @media (min-width: 100px) and (max-width: 360px) {
