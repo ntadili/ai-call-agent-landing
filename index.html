@@ -62,10 +62,23 @@
     </div>
 
 
-    <div class="cta-btns slide-up2">
-      <a href="#" onclick="openModal()"><div class="try-btn">Try Lumi</div></a>
-      <a href="https://cal.com/lumiteam/lumi-team-call" target="_blank" rel="noopener noreferrer"><div class="header-btn">Book a call</div></a>
+    <div class="cta-btns">
+      <a href="#" onclick="openModal()" class="slide-up2"><div class="try-btn">Try Lumi</div></a>
+      <a href="https://cal.com/lumiteam/lumi-team-call" target="_blank" rel="noopener noreferrer" class="slide-up2-3"><div class="header-btn">Book a call</div></a>
+      
+      <div class="efficient-arrow slide-up3">
+        <p>Quick and efficient</p>
+        <div><img src="./resources/efficientArrow.png" alt="efficientArrow"></div>
+      </div>
     </div>
+
+    <!-- Arrow Specs -->
+
+
+    <!-- <div class="not-convinced">
+      <p>Not convinced?</p>
+      <div class="arrow-div"><img src="./resources/notConvincedArrow.png" alt="Arrow"></div>
+    </div> -->
 
     <div class="video-container slide-up3">
       <iframe src="https://www.youtube.com/embed/4SNThp0YiU4?si=u03tmA0OPRWkEE4r" 
@@ -73,6 +86,7 @@
       allowfullscreen>
       </iframe>
     </div>
+
 
     <!-- Popup Modal -->
     <div class="modal-overlay" id="modal">
@@ -124,7 +138,7 @@
     <h4>Why Lumi is essential for your business</h4>
   
     <!-- Outbound Calls Row -->
-    <div class="outbound-calls">
+    <div class="outbound-calls" data-animate="slide-in-left">
       <!-- Text, Button, Arrow -->
       <div class="outbound-text">
         <h2>Outbound calls</h2>
@@ -134,28 +148,28 @@
         <img src="./resources/arrow1.png" alt="arrow" class="arrow arrow-outbound">
       </div>
   
-      <!-- Pink/Green Card -->
+      <!-- Grey/Green Card -->
       <div class="card">
         <div class="other-businesses">
           <p class="card-title">Other businesses</p>
-          <div class="item-card">No show appointments hurt revenue</div>
-          <div class="item-card">Staff spends hours making confirmation calls</div>
-          <div class="item-card">Hiring staff for follow-ups is costly</div>
-          <div class="item-card">Slow responses lead to missed opportunities</div>
+          <div class="item-card" data-animate="slide-in-left">No show appointments hurt revenue</div>
+          <div class="item-card" data-animate="slide-in-left">Staff spends hours making confirmation calls</div>
+          <div class="item-card" data-animate="slide-in-left">Hiring staff for follow-ups is costly</div>
+          <div class="item-card" data-animate="slide-in-left">Slow responses lead to missed opportunities</div>
         </div>
   
         <div class="using-lumi">
           <p class="card-title">Using Lumi</p>
-          <div class="item-card">AI sends automated reminders</div>
-          <div class="item-card">AI handles confirmations instantly</div>
-          <div class="item-card">AI follows up at a fraction of the cost</div>
-          <div class="item-card">AI calls back promptly</div>
+          <div class="item-card" data-animate="slide-in-left">AI sends automated reminders</div>
+          <div class="item-card" data-animate="slide-in-left">AI handles confirmations instantly</div>
+          <div class="item-card" data-animate="slide-in-left">AI follows up at a fraction of the cost</div>
+          <div class="item-card" data-animate="slide-in-left">AI calls back promptly</div>
         </div>
       </div>
     </div>
   
     <!-- Inbound Calls Row -->
-    <div class="inbound-calls">
+    <div class="inbound-calls" data-animate="slide-in-left">
 
       <!-- Text, Button, Arrow -->
       <div class="inbound-text">
@@ -166,22 +180,22 @@
         <img src="./resources/arrow2.png" alt="arrow" class="arrow arrow-inbound">
       </div>
 
-      <!-- Pink/Green Card -->
+      <!-- Grey/Green Card -->
       <div class="card">
         <div class="other-businesses">
           <p class="card-title">Other businesses</p>
-          <div class="item-card">Missed calls during peak hours</div>
-          <div class="item-card">Long wait times frustrate customers</div>
-          <div class="item-card">Staff overwhelmed with repetitive questions</div>
-          <div class="item-card">Manual booking mistakes</div>
+          <div class="item-card" data-animate="slide-in-left">Missed calls during peak hours</div>
+          <div class="item-card" data-animate="slide-in-left">Long wait times frustrate customers</div>
+          <div class="item-card" data-animate="slide-in-left">Staff overwhelmed with repetitive questions</div>
+          <div class="item-card" data-animate="slide-in-left">Manual booking mistakes</div>
         </div>
   
         <div class="using-lumi">
           <p class="card-title">Using Lumi</p>
-          <div class="item-card">24/7 AI answering every call</div>
-          <div class="item-card">Instant response, no waiting</div>
-          <div class="item-card">AI handles FAQs automatically</div>
-          <div class="item-card">Seamless, error-free auto booking</div>
+          <div class="item-card" data-animate="slide-in-left">24/7 AI answering every call</div>
+          <div class="item-card" data-animate="slide-in-left">Instant response, no waiting</div>
+          <div class="item-card" data-animate="slide-in-left">AI handles FAQs automatically</div>
+          <div class="item-card" data-animate="slide-in-left">Seamless, error-free auto booking</div>
         </div>
       </div>
 
@@ -389,6 +403,33 @@
   // Observe each element
   slideElements.forEach(el => {
     observer.observe(el);
+  });
+</script>
+
+<!-- Why Lumi Animation -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Select all elements that have data-animate for slides
+    const slideEls = document.querySelectorAll('.slide-in[data-animate]');
+
+    // Observer options
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate--visible');
+          obs.unobserve(entry.target); // Animate once
+        }
+      });
+    }, options);
+
+    // Observe each element
+    slideEls.forEach(el => observer.observe(el));
   });
 </script>
 
