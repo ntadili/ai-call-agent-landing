@@ -50,6 +50,9 @@
   .titles{
     width: 85%;
   }
+  .video-container{
+    margin-bottom: 28px !important;
+  }
 }
 
 @media (min-width: 100px) and (max-width: 360px) {

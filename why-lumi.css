@@ -23,7 +23,7 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
   position: relative;
 }
 
@@ -33,7 +33,7 @@
 
 .inbound-calls {
   flex-direction: row-reverse;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 
 /****************************************
@@ -196,7 +196,7 @@
 
 @media (max-width: 576px) {
   .why-lumi {
-    padding: 30px 1rem;
+    padding: 30px 1rem 1rem 0px;
   }
   .outbound-text h2,
   .inbound-text h2 {

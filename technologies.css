@@ -111,28 +111,29 @@ body {
     margin-bottom: 1rem;
   }
   .ai-logo-grid{
-    width: 300px !important;
-    margin-left: 10%;
+    width: 270px !important;
+    margin-left: 14.5%;
+    
   }
   .ai-logo-item {
     width: 80px;
   }
 
   #make{
-    width: 120px;
+    width: 100px;
     margin-right: -35px;
   }
   
   #openai{
-    width: 100px;
+    width: 80px;
   }
   
   #eleven-labs{
-    width: 110px;
+    width: 90px;
   }
   
   #vapi{
-    width: 54px;
+    width: 44px;
     margin-left: 17px;
   }
 }
