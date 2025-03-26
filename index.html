@@ -37,11 +37,11 @@
         <a href="#why-lumi">Why Lumi?</a>
         <a href="#faq">FAQ</a>
         <!-- Mobile-only Book button inside nav -->
-        <a href="#book" class="book-btn mobile-visible">Book</a>
+        <a href="https://cal.com/lumiteam/lumi-team-call" target="_blank" rel="noopener noreferrer" class="book-btn mobile-visible" style="color: white; border-radius: 5px; margin-top: 0px;">Book</a>
       </div>
   
       <!-- Book Button (Desktop Only) -->
-      <a href="#book" class="book-btn desktop-only">Book</a>
+      <a href="https://cal.com/lumiteam/lumi-team-call" target="_blank" rel="noopener noreferrer" class="book-btn desktop-only">Book</a>
   
       <!-- Hamburger Menu Button -->
       <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" onclick="toggleMenu()">
@@ -63,8 +63,8 @@
 
 
     <div class="cta-btns slide-up2">
-      <a href=""><div class="try-btn">Try Lumi</div></a>
-      <a href=""><div class="header-btn">Book a call</div></a>
+      <a href="#" onclick="openModal()"><div class="try-btn">Try Lumi</div></a>
+      <a href="https://cal.com/lumiteam/lumi-team-call" target="_blank" rel="noopener noreferrer"><div class="header-btn">Book a call</div></a>
     </div>
 
     <div class="video-container slide-up3">
@@ -74,6 +74,15 @@
       </iframe>
     </div>
 
+    <!-- Popup Modal -->
+    <div class="modal-overlay" id="modal">
+      <div class="modal">
+        <button class="close-modal" onclick="closeModal()">✕</button>
+        <h3>Talk to Lumi now:</h3>
+        <p><a href="tel:+61255011864">+61 25501 1864</a></p>
+        <small>(Only available in Australia at the moment)</small>
+      </div>
+    </div>
   </header>
 
 
@@ -120,7 +129,7 @@
       <div class="outbound-text">
         <h2>Outbound calls</h2>
         <p>Confirm bookings and reduce no-shows automatically</p>
-        <a href="#"><div class="book-btn">I’m in</div></a>
+        <a href="https://cal.com/lumiteam/lumi-team-call" target="_blank" rel="noopener noreferrer"><div class="book-btn">I'm in</div></a>
         <!-- Arrow for Outbound -->
         <img src="./resources/arrow1.png" alt="arrow" class="arrow arrow-outbound">
       </div>
@@ -152,7 +161,7 @@
       <div class="inbound-text">
         <h2>Inbound calls</h2>
         <p>Answer every call, book every customer</p>
-        <a href="#"><div class="book-btn">I’m in</div></a>
+        <a href="https://cal.com/lumiteam/lumi-team-call" target="_blank" rel="noopener noreferrer"><div class="book-btn">I'm in</div></a>
         <!-- Arrow for Inbound -->
         <img src="./resources/arrow2.png" alt="arrow" class="arrow arrow-inbound">
       </div>
@@ -291,7 +300,7 @@
     <!-- Top CTA Section -->
     <div class="cta-section">
       <h2 class="cta-title">Integrate Lumi!</h2>
-      <a href="#contact" class="cta-button">Book a Call</a>
+      <a href="https://cal.com/lumiteam/lumi-team-call" target="_blank" rel="noopener noreferrer" class="cta-button">Book a Call</a>
     </div>
   
     <!-- Footer Bottom Section -->
@@ -328,6 +337,24 @@
   menuToggle.classList.toggle("open");
 }
 </script>
+
+<!-- Popup try Lumi -->
+<script>
+  function openModal() {
+    document.getElementById('modal').style.display = 'flex';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+
+  // Optional: Close modal when clicking outside it
+  window.addEventListener('click', function (e) {
+    const modal = document.getElementById('modal');
+    if (e.target === modal) closeModal();
+  });
+</script>
+
 
 <!-- Technologies list -->
 <script>
