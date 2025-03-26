@@ -6,12 +6,13 @@
 }
 
 body {
-  background-color: #FAFAFA;/* F0F9FF */
+  /* F0F9FF */
+  background: linear-gradient(to bottom, #f9fbfe, #eaf1ff);
 }
 
 /* Navbar Styles */
 .navbar {
-  background-color: #FAFAFA;
+  background-color: #e6f0ff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
   position: sticky;
   top: 0;
@@ -60,7 +61,7 @@ body {
 }
 
 .nav-links a:hover {
-  color: #00A9FF;
+  color: #2D6CDF;
 }
 
 .nav-links a::after {
@@ -80,18 +81,18 @@ body {
 
 /* CTA Book Button */
 .book-btn {
-  background-color: #00a9ff;
+  background-color: #2D6CDF !important;
   color: #fff;
-  padding: 0.6rem 1.4rem;
+  padding: 0.7rem 2.7rem !important;
   border-radius: 6px;
-  font-size: 1.1rem;
+  font-size: 1.1rem !important;
   font-weight: 500;
   text-decoration: none;
   transition: background 0.3s;
 }
 
 .book-btn:hover {
-  background-color: #1976d2;
+  background-color: #243ab3 !important;
 }
 
 .desktop-only {
