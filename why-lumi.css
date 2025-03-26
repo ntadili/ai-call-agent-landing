@@ -2,7 +2,7 @@
   WHY LUMI SECTION
 ****************************************/
 .why-lumi {
-  padding: 15px 7rem 0px 7rem;
+  padding: 25px 7rem 0px 7rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -101,6 +101,14 @@
   height: auto;
 }
 
+
+
+.arrow-outbound{
+  position: absolute;
+  left: 150px;
+  top: 100px;
+}
+
 /****************************************
   CARDS (GREY & GREEN BOXES)
 ****************************************/
@@ -182,6 +190,10 @@
     text-align: center;
   }
 
+  .outbound-text a, .inbound-text a{
+    display: none;
+  }
+
   .outbound-text h2,
   .inbound-text h2 {
     font-size: 1.6rem;
@@ -214,4 +226,30 @@
   .item-card {
     font-size: 0.9rem;
   }
+}
+
+
+/* Common 'slide-in' starting point */
+.slide-in {
+  opacity: 0;
+}
+
+/* Slide In from Right */
+[data-animate="slide-in-right"] {
+  transform: translateX(100px);
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+[data-animate="slide-in-right"].animate--visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Slide In from Left */
+[data-animate="slide-in-left"] {
+  transform: translateX(-100px);
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+[data-animate="slide-in-left"].animate--visible {
+  opacity: 1;
+  transform: translateX(0);
 }
