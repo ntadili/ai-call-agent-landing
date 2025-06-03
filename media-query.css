@@ -66,6 +66,10 @@
     width: 15px !important;
     height: 15px !important;
   }
+
+  .cta-btns{
+    margin-left: 80px !important;  /* To make up for the new arrow div added */
+  }
 }
 
 @media (min-width: 100px) and (max-width: 360px) {

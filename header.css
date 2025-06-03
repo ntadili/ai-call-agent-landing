@@ -35,7 +35,7 @@ header p{
 .cta-btns{
   display: flex;
   gap: 10px;
-  margin-left: 70px;  /* To make up for the new arrow div added */
+  margin-left: 110px;  /* To make up for the new arrow div added */
 }
 
 .cta-btns a{
@@ -97,7 +97,7 @@ header p{
 .efficient-arrow p{
   position: relative;
   left: 40px;
-  top: 27px;
+  top: 30px;
   font-size: 0.9rem;
   font-weight: 400;
 }
