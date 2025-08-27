@@ -13,7 +13,7 @@ It showcases **Lumi**, an AI that can handle calls, manage reservations, and int
 👉 [lumicalls.com](https://lumicalls.com)
 
 <p align="center">
-  <img src="documentation/lumi.gif" width="600"/>
+  <img src="resources/documentation/lumi.gif" width="600"/>
 </p>
 
 ---
