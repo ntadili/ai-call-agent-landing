@@ -1,4 +1,4 @@
-# Lumi Calls 🌙📞
+# Lumi Calls 📞
 
 <p align="center">
   <img src="resources/documentation/1.png" alt="Lumi Calls Banner" width="800"/>
